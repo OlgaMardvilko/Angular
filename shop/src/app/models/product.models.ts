@@ -1,6 +1,9 @@
+
 export enum Category {
-    vitamins = "Vitamins",
-    sport = "Sport",
+    VITAMINS = 'Vitamins',
+    FOOD = 'Food',
+    SPORT = 'Sport',
+    NATURE = 'Nature',
 }
 
 export interface IProduct {
@@ -8,5 +11,5 @@ export interface IProduct {
     description: string,
     price: number,
     delivery: Array<string>,
+    note?: string,
 }
-

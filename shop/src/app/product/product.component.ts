@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Category } from './product.model';
+import { Category } from '../models/product.models';
 
 @Component({
     selector: 'app-product',
