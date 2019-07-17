@@ -1,0 +1,14 @@
+<h2>Your basket:</h2>
+
+<div *ngIf="productsListBuy.length; else emptyCart">
+    <h4>Your products in the basket:</h4>
+    <div *ngFor="let product of productsListBuy">
+        <p>{{product?.name}}</p>
+    </div>
+</div>
+
+<ng-template #emptyCart>
+    <div>
+        <h4>The basket is empty!!!</h4>
+    </div>
+</ng-template>
