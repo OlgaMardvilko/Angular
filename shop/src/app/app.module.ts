@@ -12,7 +12,7 @@ import { CartComponent } from './cart/cart.component';
     AppComponent,
     ProductComponent,
     ProductListComponent,
-    CartComponent
+    CartComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Category } from '../models/product.models';
 
+import { CartServiceService } from '../service/cart.service';
+
 @Component({
     selector: 'app-product',
     templateUrl: './product.component.html',
@@ -16,12 +18,14 @@ export class ProductComponent implements OnInit {
     isAvailable: boolean;
     delivery: Array<string>;
 
+    productBuy = [];
+
     @Input() item;
 
     Delivery = ['Next day', 'Standart', 'Free'];
 
 
-    constructor() { }
+    constructor(private cartService: CartServiceService) { }
 
     ngOnInit() {
 
@@ -29,6 +33,7 @@ export class ProductComponent implements OnInit {
 
     onBuyProduct() {
       console.log('You buy this prodect!!!');
+      this.cartService.setProductArray(this.item);
     }
 
 }

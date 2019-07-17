@@ -7,9 +7,9 @@ export enum Category {
 }
 
 export interface IProduct {
-    name: string,
-    description: string,
-    price: number,
-    delivery: Array<string>,
-    note?: string,
+    name: string;
+    description: string;
+    price: number;
+    delivery: Array<string>;
+    note?: string;
 }
