@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Category } from '../models/product.models';
+import { Category, IProduct } from '../models/product.models';
 
 import { CartServiceService } from '../service/cart.service';
 
@@ -20,11 +20,13 @@ export class ProductComponent implements OnInit {
 
     productBuy = [];
 
-    @Input() item;
+    @Input() item: IProduct;
 
     Delivery = ['Next day', 'Standart', 'Free'];
 
 
+    // Не нужно внедрять зависимости в этот компонент.
+    // Создавайте аутпут.
     constructor(private cartService: CartServiceService) { }
 
     ngOnInit() {
