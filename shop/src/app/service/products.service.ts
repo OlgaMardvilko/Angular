@@ -8,7 +8,7 @@ export class ProductsService {
 
   constructor() { }
 
-  public productArray: IProduct[] = [
+  private productArray: IProduct[] = [
       { name: 'Vitamin A',
         description: `Pharma Nord Omega 7 Buckthorn Oil Capsules contain SBA24 extracted
           from Himalayan Seabuckthorn berries using CO2 Supercritical extraction,
