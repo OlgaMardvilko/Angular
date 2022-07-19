@@ -16,4 +16,4 @@ updates:
       - "dependencies"
       - "vulnerability"
     commit-message:
-      prefix: "chore: Dependabot"
+      prefix: "Dependabot"
