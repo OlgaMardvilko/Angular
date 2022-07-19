@@ -1,0 +1,19 @@
+## This file specifies Dependabot version updates configuration.
+## Refer to GitHub dependabot documentation for all configuration options:
+## https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "06:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "vulnerability"
+    commit-message:
+      prefix: "chore: Dependabot security package updates"
